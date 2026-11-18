@@ -1,0 +1,150 @@
+{
+ "meta": {
+  "beschreibung": "Messungen mit 400 Ketten für Experimente 1 bis 3 (ausgedachte Zählungen, Gate aus markov-queue-demo)",
+  "zufalls_seeds": {
+   "cover": 7201,
+   "gamma_direct": 7301,
+   "gamma_start": 7302,
+   "gamma_chain": 7303,
+   "gamma_over": 7304,
+   "ln_start": 7401,
+   "ln_chain": 7402
+  },
+  "python": "3.14.6",
+  "numpy": "2.5.3"
+ },
+ "gate_ueberdeckung": [
+  {
+   "eps": 0.01,
+   "start": "leer",
+   "t_schritte": 17897,
+   "ketten": 400,
+   "zufalls_seed": 7201,
+   "ueberdeckung": 0.965,
+   "streuung_gemessen": 0.00489570189315439,
+   "streuung_exakt": 0.005101950636950317,
+   "mittel": 0.07606582108733308
+  },
+  {
+   "eps": 0.01,
+   "start": "pi",
+   "t_schritte": 17897,
+   "ketten": 400,
+   "zufalls_seed": 7202,
+   "ueberdeckung": 0.9575,
+   "streuung_gemessen": 0.004993040607983287,
+   "streuung_exakt": 0.005101950636950317,
+   "mittel": 0.076021679611108
+  },
+  {
+   "eps": 0.005,
+   "start": "leer",
+   "t_schritte": 71586,
+   "ketten": 400,
+   "zufalls_seed": 7203,
+   "ueberdeckung": 0.9525,
+   "streuung_gemessen": 0.0024841411043539647,
+   "streuung_exakt": 0.002551010953340931,
+   "mittel": 0.07608079792138128
+  },
+  {
+   "eps": 0.005,
+   "start": "pi",
+   "t_schritte": 71586,
+   "ketten": 400,
+   "zufalls_seed": 7204,
+   "ueberdeckung": 0.9525,
+   "streuung_gemessen": 0.0025506676880147983,
+   "streuung_exakt": 0.002551010953340931,
+   "mittel": 0.07603655044282402
+  }
+ ],
+ "gamma_direkt": {
+  "ziehungen": 20000,
+  "zufalls_seed": 7301,
+  "mittel": 1.6161423372562325,
+  "sd": 0.2787387818649124,
+  "ks_d": 0.007063695412331289,
+  "ks_p": 0.26985492630328034
+ },
+ "gamma_ketten": [
+  {
+   "schritt_sd": 0.5,
+   "ketten": 400,
+   "schritte": 5000,
+   "annahmerate": 0.842383,
+   "rmse_in_sd": {
+    "250": 0.29879976598972796,
+    "1000": 0.14743372319418427,
+    "5000": 0.0698144153302333
+   },
+   "ess_je_schritt": 0.04103361553718394
+  },
+  {
+   "schritt_sd": 1.0,
+   "ketten": 400,
+   "schritte": 5000,
+   "annahmerate": 0.7020320000000011,
+   "rmse_in_sd": {
+    "250": 0.18589385697406358,
+    "1000": 0.09140152786849604,
+    "5000": 0.040176153296450155
+   },
+   "ess_je_schritt": 0.12390627208009855
+  },
+  {
+   "schritt_sd": 2.4,
+   "ketten": 400,
+   "schritte": 5000,
+   "annahmerate": 0.43846599999999963,
+   "rmse_in_sd": {
+    "250": 0.1434910944815766,
+    "1000": 0.06940918724356973,
+    "5000": 0.02950547634555957
+   },
+   "ess_je_schritt": 0.22973371460952344
+  },
+  {
+   "schritt_sd": 5.0,
+   "ketten": 400,
+   "schritte": 5000,
+   "annahmerate": 0.24015550000000035,
+   "rmse_in_sd": {
+    "250": 0.15351281061913166,
+    "1000": 0.07712482146474532,
+    "5000": 0.034049305751258696
+   },
+   "ess_je_schritt": 0.17250968139891046
+  },
+  {
+   "schritt_sd": 12.0,
+   "ketten": 400,
+   "schritte": 5000,
+   "annahmerate": 0.10408850000000222,
+   "rmse_in_sd": {
+    "250": 0.2418951738488792,
+    "1000": 0.12338277246328297,
+    "5000": 0.054053970651625975
+   },
+   "ess_je_schritt": 0.06845021122964834
+  }
+ ],
+ "gamma_ueberstreut": {
+  "ketten": 400,
+  "schritte": 5000,
+  "rmse_in_sd": 0.03076527446755747
+ },
+ "lognormal_kette": {
+  "schritt_sd": 2.4,
+  "ketten": 400,
+  "schritte": 16000,
+  "annahmerate": 0.44164984375000066,
+  "rmse_in_sd": {
+   "250": 0.13479432511303371,
+   "1000": 0.06772530547319904,
+   "4000": 0.03265114261527398,
+   "16000": 0.016694365335378124
+  },
+  "ess_je_schritt": 0.22425399615767036
+ }
+}
